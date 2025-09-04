@@ -1,16 +1,105 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PC Express</title>
+    <link rel="stylesheet" href="css/sytle.css" />
 </head>
-
 <body>
-  Hello world
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1>PC Express</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="html/sobre.html">Sobre</a></li>
+                <li><a href="html/contato.html">Contato</a></li>
+                <li><a href="html/produtos.html">Produtos</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <section id="home" class="banner" aria-label="Banner da empresa PC Express">
+        <img src="img/banner.jpg" alt="Imagem ilustrativa de equipamentos de informática" />
+        <div class="banner-text">
+            Sua loja especializada em equipamentos de informática
+        </div>
+    </section>
+
+    <section class="product-grid" aria-label="Lista de produtos">
+        <div class="product-item" tabindex="0">
+            <img src="img/teclado.jpg" alt="Teclado Mecânico Gamer" />
+            <p>Teclado Mecânico Gamer</p>
+        </div>
+        <div class="product-item" tabindex="0">
+            <img src="img/mouse.jpg" alt="Mouse Gamer RGB" />
+            <p>Mouse Gamer RGB</p>
+        </div>
+        <div class="product-item" tabindex="0">
+            <img src="img/monitor.jpg" alt="Monitor Ultrawide 34&quot;" />
+            <p>Monitor Ultrawide 34"</p>
+        </div>
+        <div class="product-item" tabindex="0">
+            <img src="img/headset.jpg" alt="Headset com Microfone" />
+            <p>Headset com Microfone</p>
+        </div>
+        <div class="product-item" tabindex="0">
+            <img src="img/placa-video.jpg" alt="Placa de Vídeo RTX 3060" />
+            <p>Placa de Vídeo RTX 3060</p>
+        </div>
+        <div class="product-item" tabindex="0">
+            <img src="img/ssd.jpg" alt="SSD NVMe 1TB" />
+            <p>SSD NVMe 1TB</p>
+        </div>   
+    </section>
+    <section class="category-grid" aria-label="Categorias de produtos">
+        <div class="category-item" tabindex="0">
+          <img src="img/perifericos.jpg" alt="Categoria Periféricos" />
+          <p>Periféricos</p>
+        </div>
+        <div class="category-item" tabindex="0">
+          <img src="img/placas-mae.jpg" alt="Categoria Placas Mãe" />
+          <p>Placas Mãe</p>
+        </div>
+        <div class="category-item" tabindex="0">
+          <img src="img/gabinetes.jpg" alt="Categoria Gabinetes" />
+          <p>Gabinetes</p>
+        </div>
+        <div class="category-item" tabindex="0">
+          <img src="img/monitores.jpg" alt="Categoria Monitores" />
+          <p>Monitores</p>
+        </div>
+      </section>
+      
+    <section id="sobre" aria-label="Sobre a empresa PC Express">
+        <h2>Sobre a PC Express</h2>
+        <p>
+            A PC Express é especializada em oferecer equipamentos de informática de alta qualidade, desde periféricos até componentes para montagem de computadores personalizados.
+            Nosso compromisso é entregar o melhor custo-benefício e atendimento especializado para gamers, profissionais de TI e entusiastas da tecnologia.
+        </p>
+    </section>
+
+    <section id="contato" aria-label="Formulário de contato">
+        <h2>Contato</h2>
+        <form action="#" method="post" aria-label="Formulário para contato com a PC Express">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required />
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Telefone: (31) 1458-8956 | Endereço: Av. Amazonas, 3955 - Centro, Belo Horizonte - MG, 30180-001</p>
+    </footer>
+
+</body>
 </html>
